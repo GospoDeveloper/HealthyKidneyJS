@@ -1,0 +1,613 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.logo {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: green;
+}
+
+.first {
+  background-image: url("./img/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h2First {
+  background: rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.h2center,
+.pcenter {
+  color: black;
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+p {
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.center {
+  background-image: url("/img/mid.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  background-image: url("/img/footer1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.continutFirst {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(10px);
+  width: 40%;
+  font-size: 30px;
+  transition: transform 0.2s ease; /* Smooth floating transition */
+}
+
+.continutFirst:hover {
+  transform: translateY(-10px); /* Moves div upwards by 10px */
+}
+
+/* Optional: Styling paragraphs for better visualization */
+.continutFirst p {
+  margin: 10px 0;
+}
+
+.continutFirst2 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(10px);
+  width: 40%;
+  font-size: 25px;
+  transition: transform 0.2s ease; /* Smooth floating transition */
+}
+.continutFirst2:hover {
+  transform: translateY(-10px); /* Moves div upwards by 10px */
+}
+.continutFirst2 p {
+  margin: 10px 0;
+}
+
+.continutFirst3 {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(10px);
+  width: 40%;
+  margin-right: 10px;
+  font-size: 25px;
+  transition: transform 0.2s ease; /* Smooth floating transition */
+}
+.continutFirst3:hover {
+  transform: translateY(-10px); /* Moves div upwards by 10px */
+}
+.continutFirst3 p {
+  margin: 10px 0;
+}
+.downArrow a {
+  align-self: center;
+  font-size: 40px;
+  color: white;
+}
+
+.downArrow a:hover {
+  cursor: pointer;
+  color: green;
+}
+.downArrow {
+  align-self: center;
+}
+
+.h2center {
+  margin-top: 100px;
+  background: rgba(202, 190, 190, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.center {
+  display: flex;
+}
+
+.continutCenter,
+.continutCenter2,
+.continutCenter3,
+.continutCenter4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 50px;
+  background: rgba(243, 238, 238, 0.5);
+  backdrop-filter: blur(10px);
+  width: 40%;
+  font-size: 25px;
+  transition: transform 0.2s ease; /* Smooth floating transition */
+}
+
+.continutCenter p {
+  color: black;
+}
+.continutCenter2 p {
+  color: black;
+}
+.continutCenter3 p {
+  color: black;
+}
+.continutCenter4 p {
+  color: black;
+}
+
+.continutCenter {
+  align-self: flex-end;
+}
+
+.continutCenter2 {
+  align-self: center;
+}
+
+.continutCenter3 {
+  align-self: start;
+}
+
+.continutCenter:hover {
+  transform: translateY(-10px); /* Moves div upwards by 10px */
+}
+.continutCenter2:hover {
+  transform: translateY(-10px); /* Moves div upwards by 10px */
+}
+.continutCenter3:hover {
+  transform: translateY(-10px); /* Moves div upwards by 10px */
+}
+.continutCenter4:hover {
+  transform: translateY(-10px); /* Moves div upwards by 10px */
+}
+
+.downArrowMid a {
+  align-self: center;
+  font-size: 40px;
+  color: black;
+}
+
+.downArrowMid a:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.h2Footer {
+  margin-top: 130px;
+  background: rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.continutFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+  background: rgba(50, 50, 50, 0.5);
+  backdrop-filter: blur(10px);
+  width: 35%;
+  height: 40%;
+  font-size: 25px;
+  transition: transform 0.2s ease; /* Smooth floating transition */
+}
+
+.imgFormular {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.imgFormular:hover {
+  transform: scale(1.1); /* Zoom in slightly */
+}
+
+.btnTesteaza {
+  width: 50%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background: rgba(255, 250, 250, 0.873);
+  font-size: 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  cursor: pointer;
+  transition: background-position 0.5s ease-in-out;
+  background: linear-gradient(90deg, rgba(255, 250, 250, 0.873) 50%, green 50%);
+  background-size: 200%;
+}
+
+.btnTesteaza:hover {
+  background-position: right;
+}
+
+.endPage {
+  background-image: url("/img/end.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h2EndPage {
+  margin-top: 100px;
+  background: rgba(243, 238, 238, 0.5);
+  backdrop-filter: blur(10px);
+  color: black;
+}
+
+.imginfoMed {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+.imginfoMed:hover {
+  transform: scale(1.1); /* Zoom in slightly */
+}
+
+.continutEndPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(243, 238, 238, 0.5);
+  backdrop-filter: blur(10px);
+  margin: 70px;
+  width: 35%;
+
+  font-size: 25px;
+  transition: transform 0.2s ease; /* Smooth floating transition */
+}
+.continutEndPage p {
+  color: black;
+}
+
+.donations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(243, 238, 238, 0.5);
+  backdrop-filter: blur(10px);
+  width: 35%;
+  font-size: 25px;
+  transition: transform 0.2s ease; /* Smooth floating transition */
+  margin-bottom: 20px;
+}
+.donations p {
+  color: black;
+}
+
+.btnInfoMed {
+  width: 50%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background: rgba(255, 250, 250, 0.873);
+  font-size: 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  cursor: pointer;
+  transition: background-position 0.5s ease-in-out;
+  background: linear-gradient(90deg, rgba(255, 250, 250, 0.873) 50%, green 50%);
+  background-size: 200%;
+  margin-bottom: 20px;
+}
+
+.btnInfoMed:hover {
+  background-position: right;
+}
+.btnDonations {
+  width: 50%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background: rgba(255, 250, 250, 0.873);
+  font-size: 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  cursor: pointer;
+  transition: background-position 0.5s ease-in-out;
+  background: linear-gradient(90deg, rgba(255, 250, 250, 0.873) 50%, green 50%);
+  background-size: 200%;
+  margin-bottom: 20px;
+}
+
+.btnDonations:hover {
+  background-position: right;
+}
+
+/* Mobile-Responsive Styles */
+@media (max-width: 768px) {
+  /* General Body */
+  body {
+    padding: 10px;
+  }
+
+  /* Header */
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  /* Main Section */
+  .first,
+  .center,
+  .footer,
+  .endPage {
+    height: auto;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Content Box (Flex Direction Adjustments for Mobile) */
+  .continutFirst,
+  .continutFirst2,
+  .continutFirst3,
+  .continutCenter,
+  .continutCenter2,
+  .continutCenter3,
+  .continutCenter4,
+  .continutFooter,
+  .continutEndPage,
+  .donations {
+    width: 90%;
+    margin: 20px 0;
+    font-size: 20px;
+  }
+
+  /* Images */
+  .imgFormular,
+  .imginfoMed {
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+  }
+
+  /* Button Adjustments */
+  .btnTesteaza {
+    width: 80%;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  /* H2 Tags */
+  h2 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 40px;
+    padding: 20px;
+  }
+
+  .h2Footer {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .h2EndPage {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  /* Adjust text in content boxes */
+  .continutFirst p,
+  .continutFirst2 p,
+  .continutFirst3 p,
+  .continutCenter p,
+  .continutCenter2 p,
+  .continutCenter3 p,
+  .continutCenter4 p,
+  .continutFooter p,
+  .continutEndPage p,
+  .donations p {
+    font-size: 18px;
+  }
+
+  /* Down Arrow */
+  .downArrow a,
+  .downArrowMid a {
+    font-size: 40px;
+  }
+
+  .downArrow a:hover,
+  .downArrowMid a:hover {
+    color: green;
+  }
+
+  /* Footer Buttons */
+  .btnTesteaza {
+    font-size: 14px;
+    width: 70%;
+  }
+}
+
+/* For very small screens like phones in portrait mode */
+@media (max-width: 480px) {
+  /* Header and Navigation */
+  .logo {
+    font-size: 20px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  /* Content Boxes */
+  .continutFirst,
+  .continutFirst2,
+  .continutFirst3,
+  .continutCenter,
+  .continutCenter2,
+  .continutCenter3,
+  .continutCenter4,
+  .continutFooter,
+  .continutEndPage,
+  .donations {
+    width: 95%;
+    font-size: 18px;
+  }
+
+  /* Images */
+  .imgFormular,
+  .imginfoMed {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Buttons */
+  .btnTesteaza {
+    width: 90%;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  /* H2 font sizes */
+  h2 {
+    font-size: 24px;
+  }
+
+  /* Down Arrow */
+  .downArrow a,
+  .downArrowMid a {
+    font-size: 35px;
+  }
+
+  /* Footer content adjustments */
+  .footer {
+    padding: 10px;
+  }
+}
+
+/* Define the animation for fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Default state of elements before they are scrolled into view */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Applied when the element is visible */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}

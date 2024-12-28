@@ -1,0 +1,44 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+.logo {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: green;
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algoritm Nutritional</title>
+    <link rel="stylesheet" type="text/css" href="styleAlgoritm.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">HealthyKidney</a>
+      <nav class="navbar">
+        <a href="index.html">Acasă</a>
+      </nav>
+    </header>
+    <div class="formular">
+      <h2>Formular Nutrițional</h2>
+      <form class="formular-nutritional" method="post">
+        <!-- Greutate -->
+        <div>
+          <label for="greutate" class="labelTitle">1. Greutate (în kg): </label>
+          <input
+            id="greutate"
+            class="input-text"
+            type="number"
+            placeholder="greutate"
+            required
+            min="10"
+            max="400"
+            name="greutate"
+          />
+        </div>
+        <!-- Inaltime -->
+        <div>
+          <label for="inaltime" class="labelTitle">2. Înaltime (în cm): </label>
+          <input
+            id="inaltime"
+            class="input-text"
+            type="number"
+            placeholder="inaltime"
+            required
+            min="50"
+            max="300"
+            name="inaltime"
+          />
+        </div>
+        <!-- Apa -->
+        <div class="date-consum-apa">
+          <div>
+            <label class="labelTitle"
+              >3. Câți litri de apă consumați pe zi?
+            </label>
+            <div>
+              <input
+                type="radio"
+                id="apa1"
+                name="cantitateApa"
+                value="0"
+                required
+              />
+              <label for="apa1">mai puțin de 1L</label>
+            </div>
+            <div>
+              <input type="radio" id="apa2" name="cantitateApa" value="1" />
+              <label for="apa2">1L</label>
+            </div>
+            <div>
+              <input type="radio" id="apa3" name="cantitateApa" value="1.5" />
+              <label for="apa3">1,5L</label>
+            </div>
+            <div>
+              <input type="radio" id="apa4" name="cantitateApa" value="2" />
+              <label for="apa4">2L</label>
+            </div>
+            <div>
+              <input type="radio" id="apa5" name="cantitateApa" value="2.5" />
+              <label for="apa5">peste 2L</label>
+            </div>
+          </div>
+          <!-- Carbogazoase -->
+          <div>
+            <label class="labelTitle">4. Consumați băuturi carbogazoase?</label>
+            <div>
+              <input
+                type="radio"
+                id="carbogazoaseDa"
+                name="carbogazoase"
+                value="Da"
+                required
+              />
+              <label for="carbogazoaseDa">Da</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="carbogazoaseNu"
+                name="carbogazoase"
+                value="Nu"
+              />
+              <label for="carbogazoaseNu">Nu</label>
+            </div>
+          </div>
+          <!-- Sucuri Naturale -->
+          <div>
+            <label class="labelTitle"
+              >5. Consumați sucuri naturale care conțin citrice? (exemplu:
+              lămâie sau portocale)
+            </label>
+            <div>
+              <input
+                type="radio"
+                id="sucuriDa"
+                name="consumSucuriNaturale"
+                value="da"
+                required
+              />
+              <label for="sucuriDa">Da</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="sucuriNu"
+                name="consumSucuriNaturale"
+                value="nu"
+              />
+              <label for="sucuriNu">Nu</label>
+            </div>
+          </div>
+          <!-- Lapte -->
+          <div>
+            <label class="labelTitle"
+              >6. Ce cantitate de lapte consumați zilnic?</label
+            >
+            <div>
+              <input
+                type="radio"
+                id="lapte0"
+                name="cantitateLapte"
+                value="0"
+                required
+              />
+              <label for="lapte0">Nu consum</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="lapte400"
+                name="cantitateLapte"
+                value="400"
+              />
+              <label for="lapte400">Mai putin de 500 ml</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="lapte500"
+                name="cantitateLapte"
+                value="500"
+              />
+              <label for="lapte500">500 ml</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="lapte600"
+                name="cantitateLapte"
+                value="600"
+              />
+              <label for="lapte600">Mai mult de 500 ml</label>
+            </div>
+          </div>
+        </div>
+        <!-- Alimentatie -->
+        <div class="date-alimentatie">
+          <div>
+            <label class="labelTitle"
+              >7. De cate ori vă alimentați pe zi?</label
+            >
+            <div>
+              <input
+                type="radio"
+                id="mese1"
+                name="cantitateMese"
+                value="1"
+                required
+              />
+              <label for="mese1">1 masă / zi</label>
+            </div>
+            <div>
+              <input type="radio" id="mese2" name="cantitateMese" value="2" />
+              <label for="mese2">2 mese / zi</label>
+            </div>
+            <div>
+              <input type="radio" id="mese3" name="cantitateMese" value="3" />
+              <label for="mese3">3 mese / zi</label>
+            </div>
+            <div>
+              <input type="radio" id="mese4" name="cantitateMese" value="4" />
+              <label for="mese4">Mai mult de 3 mese / zi</label>
+            </div>
+          </div>
+          <!-- Legume -->
+          <div>
+            <label class="labelTitle"
+              >8. Cât de des consumați legume pe săptămână?</label
+            >
+            <div>
+              <input
+                type="radio"
+                id="legume1"
+                name="cantitateLegumeSaptamana"
+                value="1"
+                required
+              />
+              <label for="legume1">Zilnic</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="legume2"
+                name="cantitateLegumeSaptamana"
+                value="2"
+              />
+              <label for="legume2">La 2 - 3 zile</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="legume3"
+                name="cantitateLegumeSaptamana"
+                value="3"
+              />
+              <label for="legume3">Odată pe săptămână</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="legume4"
+                name="cantitateLegumeSaptamana"
+                value="4"
+              />
+              <label for="legume4">Deloc</label>
+            </div>
+          </div>
+          <div>
+            <label class="labelTitle"
+              >9. Precizați câte porții de legume consumați pe zi</label
+            >
+            <label>1 porție</label>
+            <input type="radio" name="cantitateLegumeZi" value="1" required />
+            <label>2 porții</label>
+            <input type="radio" name="cantitateLegumeZi" value="2" />
+            <label>mai mult de 3 porții</label>
+            <input type="radio" name="cantitateLegumeZi" value="3" />
+          </div>
+          <!-- Fructe -->
+          <div>
+            <label class="labelTitle">10. Cât de des consumați fructe?</label>
+            <div>
+              <input
+                type="radio"
+                id="fructe1"
+                name="cantitateFructeSaptamana"
+                value="1"
+                required
+              />
+              <label for="fructe1">Zilnic</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="fructe2"
+                name="cantitateFructeSaptamana"
+                value="2"
+              />
+              <label for="fructe2">La 2 - 3 zile</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="fructe3"
+                name="cantitateFructeSaptamana"
+                value="3"
+              />
+              <label for="fructe3">O data</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="fructe4"
+                name="cantitateFructeSaptamana"
+                value="4"
+              />
+              <label for="fructe4">Deloc</label>
+            </div>
+          </div>
+          <!-- Carne -->
+          <div>
+            <label class="labelTitle"
+              >11. Cât de des pe săptămână consumați carne?</label
+            >
+            <label>Zilnic</label>
+            <input
+              type="radio"
+              name="cantitateCarneSaptamana"
+              value="1"
+              required
+            />
+            <label>La 2 - 3 zile</label>
+            <input type="radio" name="cantitateCarneSaptamana" value="2" />
+            <label>O dată</label>
+            <input type="radio" name="cantitateCarneSaptamana" value="3" />
+            <label>Deloc</label>
+            <input type="radio" name="cantitateCarneSaptamana" value="4" />
+          </div>
+          <!-- Oua -->
+          <div>
+            <label class="labelTitle"
+              >12. Câte ouă consumați pe săptămână?</label
+            >
+            <label>1</label>
+            <input type="radio" name="cantitateOua" value="1" required />
+            <label>1 - 3</label>
+            <input type="radio" name="cantitateOua" value="2" />
+            <label>Mai mult de 3 </label>
+            <input type="radio" name="cantitateOua" value="2" />
+          </div>
+          <!-- Sare -->
+          <div>
+            <label class="labelTitle"
+              >13. Câte lingurițe de sare consumați pe zi?</label
+            >
+            <label>Un sfert de linguriță</label>
+            <input type="radio" name="cantitateSare" value="1" required />
+            <label>Jumătate de linguriță</label>
+            <input type="radio" name="cantitateSare" value="2" />
+            <label>1 linguriță</label>
+            <input type="radio" name="cantitateSare" value="3" />
+            <label>Mai mult de 1 linguriță</label>
+            <input type="radio" name="cantitateSare" value="4" />
+          </div>
+          <!-- paine -->
+          <div>
+            <label class="labelTitle"
+              >14. Câte felii de pâine consumați zilnic?</label
+            >
+            <label> nu consum</label>
+            <input type="radio" name="cantitatePaine" value="0" required />
+            <label>1 felie</label>
+            <input type="radio" name="cantitatePaine" value="1" />
+            <label>3 - 4 felii</label>
+            <input type="radio" name="cantitatePaine" value="2" />
+            <label>5 - 10 felie</label>
+            <input type="radio" name="cantitatePaine" value="3" />
+            <label>1 KG</label>
+            <input type="radio" name="cantitatePaine" value="4" />
+          </div>
+        </div>
+        <button type="submit">Solicită interpretare</button>
+      </form>
+    </div>
+    <script src="scriptAlgoritm.js"></script>
+  </body>
+</html>
