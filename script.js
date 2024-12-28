@@ -8,3 +8,11 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+
+let btnDonations = document.querySelector(".btnDonations");
+console.log(btnDonations);
+
+btnDonations.addEventListener("click", (e) => {
+  e.preventDefault(e);
+  window.location.href = "https://revolut.me/gospodk1gy";
+});
